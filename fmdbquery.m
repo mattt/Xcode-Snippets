@@ -6,30 +6,30 @@
 // Completion Scope: Function or Method
 
 
-FMDatabaseQueue *queue = ￼;
+FMDatabaseQueue *queue = <#Queue#>￼;
 
 ￼ __block *result = nil;
 
 [queue inDatabase:^(FMDatabase *db) {
     @try {
         
-        FMResultSet *results = [db executeQuery:￼];
+        FMResultSet *results = [db executeQuery:￼<#Query#>];
         
         if (!results || [results isKindOfClass:[NSNull class]]) {
-            ErrorLog(￼, [db lastError]);
+            NSLog(<#Error String#>￼, [db lastError]);
             return;
         }
         
         while([results next]) {
             NSDictionary *resDict = [results resuresultDictionary]
-            ￼
+            ￼<#Handle the object#>
         }
 
         
     } @catch (NSException *exception) {
         
-        ErrorLog(￼,
-                 exception.reason, [db lastError]);
+        NSLog(￼<#Error String#>,
+              exception.reason, [db lastError]);
         
     } @finally {
         

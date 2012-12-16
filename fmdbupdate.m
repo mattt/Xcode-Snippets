@@ -9,15 +9,15 @@
 [queue inDatabase:^(FMDatabase *db) {
     
     @try {
-        BOOL result = [db executeUpdate:￼];
+        BOOL result = [db executeUpdate:<#Query#>￼];
         
         if (!result || [result isKindOfClass:[NSNull class]]) {
-            ErrorLog(￼, [db lastError]);
+            NSLog(￼<#Error string#>, [db lastError]);
         }
         
     } @catch (NSException *exception) {
         
-        ErrorLog(￼,
+        NSLog(￼<#Error string#>,
                  exception.reason, [db lastError]);
     } @finally {
     }

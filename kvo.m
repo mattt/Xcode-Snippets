@@ -6,6 +6,5 @@
 // Completion Scope: Function or Method
 
 [self willChangeValueForKey:@"<#ivar#>"];
-[<#ivar#> autorelease];
-<#ivar#> = [<#newValue#> retain];
+<#ivar#> = <#newValue#>;
 [self didChangeValueForKey:@"<#ivar#>"];

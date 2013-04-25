@@ -5,4 +5,4 @@
 // Language: Objective-C
 // Completion Scope: Function or Method
 
-__weak __typeof(&*self)weakSelf = self;
+__weak typeof(self)weakSelf = self;

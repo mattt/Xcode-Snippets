@@ -22,7 +22,9 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:<#(UITableViewCellStyle)#> reuseIdentifier:CellIdentifier];
     }
-        
+    
+    [self configureCell:cell forRowAtIndexPath:indexPath];
+    
     return cell;
 }
 

@@ -1,4 +1,5 @@
 // Property (nonatomic, copy) NSString
+// pnc - Useful shortcut for declaring NSString properties
 // 
 // Platform: iOS
 // Language: Objective-C

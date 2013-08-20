@@ -5,7 +5,7 @@
 // Language: Objective-C
 // Completion Scope: Class Implementation
 
-+ (<#class#> *)shared<#name#> {
++ (instancetype)shared<#name#> {
     static <#class#> *_shared<#name#> = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

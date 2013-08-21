@@ -5,4 +5,4 @@
 // Language: Objective-C
 // Completion Scope: Function or Method
 
-__strong __typeof(&*weakSelf)strongSelf = <#weakSelf#>;
+__strong __typeof(<#weakSelf#>)strongSelf = <#weakSelf#>;

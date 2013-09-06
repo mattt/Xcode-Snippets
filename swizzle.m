@@ -10,7 +10,7 @@ __block BOOL methodHasBeenCalled;
 
 beforeEach(^{
     methodHasBeenCalled = NO;
-    origMethod = class_getClassMethod([<#ClassName#> class], @selector(<#selector#>));
+    origMethod = class_getInstanceMethod([<#ClassName#> class], @selector(<#selector#>));
 	
     IMP mockBlock = imp_implementationWithBlock(^(id _self <#, ...#>){
         methodHasBeenCalled = YES;
@@ -19,6 +19,8 @@ beforeEach(^{
     });
 	
     origImpl = method_setImplementation(origMethod, mockBlock);
+
+    <#Call to test...#>
 });
 
 afterEach(^{

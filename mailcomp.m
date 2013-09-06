@@ -7,7 +7,7 @@
 
 #import <MessageUI/MessageUI.h>
 
-- (void)presentModalMailComposerViewController {
+- (void)presentModalMailComposerViewController:(BOOL)animated {
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *composeViewController = [[MFMailComposeViewController alloc] init];
         composeViewController.mailComposeDelegate = self;
@@ -16,7 +16,7 @@
         [composeViewController setMessageBody:<#Body#> isHTML:YES];
         [composeViewController setToRecipients:@[<#Recipients#>]];
 
-        [self presentModalViewController:composeViewController animated:YES];
+        [self presentModalViewController:composeViewController animated:animated];
     } else {
         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"<#Cannot Send Mail Message#>", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
     }
@@ -29,7 +29,9 @@
                         error:(NSError *)error
 {
     if (error) {
-        <#Handle error#>
+        NSLog(@"%@", error);
+
+        <#statements#>
     }
 
     [self dismissModalViewControllerAnimated:YES];

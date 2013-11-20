@@ -1,3 +1,10 @@
+// NSFetchedResultsController
+// Placeholders for the fetched results controller
+//
+// Platform: iOS
+// Language: Objective-C
+// Completion Scope: Class Implementation
+
 #pragma mark - NSFetchedResultsController
 - (NSFetchedResultsController *)fetchedResultsController
 {

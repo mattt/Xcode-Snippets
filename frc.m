@@ -1,48 +1,18 @@
 // NSFetchedResultsController
-// Placeholders for the fetched results controller
+// Boilerplate for creating an NSFetchedResultsController
 //
 // Platform: iOS
 // Language: Objective-C
-// Completion Scope: Class Implementation
+// Completion Scope: Function or Method
 
-#pragma mark - NSFetchedResultsController
-- (NSFetchedResultsController *)fetchedResultsController
-{
-    if (fetchedResultsController != nil) {
-        return fetchedResultsController;
-    }
+NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:<#(NSString *)#>];
+fetchRequest.predicate = [NSPredicate predicateWithFormat:<#(NSString *), ...#>];
+fetchRequest.sortDescriptors = @[<#(NSSortDescriptor *), ...#>];
 
-    // Set up the fetched results controller.
-    // Create the fetch request for the entity.
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"<#Entity name#>" inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
+NSFetchedResultsController *fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:<#(NSFetchRequest *)#> managedObjectContext:<#(NSManagedObjectContext *)#> sectionNameKeyPath:<#(NSString *)#> cacheName:<#(NSString *)#>];
+fetchedResultsController.delegate = <#(id <NSFetchedResultsControllerDelegate>)#>;
 
-    // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:20];
-
-    // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"<#Sort Property#>" ascending:NO];
-    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
-    [fetchRequest setSortDescriptors:sortDescriptors];
-
-    NSPredicate *latestPredicate = [NSPredicate predicateWithFormat:@"<#Predicate Format#>"];
-    fetchRequest.predicate = latestPredicate;
-
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    aFetchedResultsController.delegate = self;
-    fetchedResultsController = aFetchedResultsController;
-
-    NSError *error = nil;
-    if (![fetchedResultsController performFetch:&error]) {
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-
-    }
-
-    return fetchedResultsController;
-}
-
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
-    [<#Container#> reloadData];
+NSError *error = nil;
+if (![fetchedResultsController performFetch:&error]) {
+    NSLog(@"Error: %@", error);
 }

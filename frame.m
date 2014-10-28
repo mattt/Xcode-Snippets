@@ -7,5 +7,5 @@
 <# view #>.frame = ({
     CGRect frame = <# view #>.frame;
     <# ... #>
-    frame;
+    CGRectIntegral(frame);
 });

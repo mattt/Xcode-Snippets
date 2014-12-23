@@ -1,6 +1,6 @@
 // __weak self
-// Declare weak referece to self
-// 
+// Declare weak reference to self
+//
 // Platform: All
 // Language: Objective-C
 // Completion Scope: Function or Method

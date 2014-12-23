@@ -1,6 +1,6 @@
 // __strong self
-// Declare strong referece to weak reference
-// 
+// Declare strong reference to weak reference
+//
 // Platform: All
 // Language: Objective-C
 // Completion Scope: Function or Method

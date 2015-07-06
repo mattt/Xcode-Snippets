@@ -1,6 +1,6 @@
 ---
 title: "XCT Assert Nil"
-summary: "Assert for XCTest"
+summary: "Assert nil for XCTest"
 completion-scope: Function or Method
 ---
 

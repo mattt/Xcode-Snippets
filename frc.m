@@ -2,7 +2,7 @@
 title: "NSFetchedResultsController"
 summary: "Boilerplate for creating an NSFetchedResultsController"
 platform: iOS
-completion-scope: Function or Method
+completion-scope: CodeBlock
 ---
 
 NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:<#(NSString *)#>];

@@ -1,7 +1,7 @@
 ---
 title: "XCT Assert Equals"
 summary: "Assert equals for XCTest"
-completion-scope: Function or Method
+completion-scope: CodeBlock
 ---
 
 XCTAssertEqual(<#expected#>, <#actual#>, <#message#>);

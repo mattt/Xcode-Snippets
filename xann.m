@@ -1,7 +1,7 @@
 ---
 title: "XCT Assert Not Nil"
 summary: "Assert not nil for XCTest"
-completion-scope: Function or Method
+completion-scope: CodeBlock
 ---
 
 XCTAssertNotNil(<#expression#>, <#message#>);

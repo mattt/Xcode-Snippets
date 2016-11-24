@@ -2,7 +2,7 @@
 title: "UICollectionViewDataSource"
 summary: "Placeholders for essential UICollectionViewDataSource delegate methods"
 platform: iOS
-completion-scope: Class Implementation
+completion-scope: ClassImplementation
 ---
 
 #pragma mark - UICollectionViewDataSource

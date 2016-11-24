@@ -1,6 +1,6 @@
 ---
 title: "Library Directory Path"
-completion-scope: Function or Method
+completion-scope: CodeBlock
 ---
 
 [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];

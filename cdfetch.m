@@ -1,7 +1,7 @@
 ---
 title: "Core Data Fetch"
 summary: "Simple Core Data Fetch with Predicate & Sort Descriptor"
-completion-scope: Function or Method
+completion-scope: CodeBlock
 ---
 
 NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:<#entityName#>];

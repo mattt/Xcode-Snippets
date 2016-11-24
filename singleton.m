@@ -1,7 +1,7 @@
 ---
 title: "Shared Singleton"
 summary: "Class method that returns a singleton instance"
-completion-scope: Class Implementation
+completion-scope: ClassImplementation
 ---
 
 + (instancetype)shared<#name#> {

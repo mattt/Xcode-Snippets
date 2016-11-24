@@ -1,6 +1,6 @@
 ---
 title: "NSLocalizedString"
-completion-scope: Code Expression
+completion-scope: CodeExpression
 ---
 
 NSLocalizedString(@"<#Message#>", <#Comment#>)

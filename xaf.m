@@ -1,7 +1,7 @@
 ---
 title: "XCT Assert False"
 summary: "Assert false for XCTest"
-completion-scope: Function or Method
+completion-scope: CodeBlock
 ---
 
 XCTAssertFalse(<#expression#>, <#message#>);

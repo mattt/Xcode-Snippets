@@ -1,7 +1,7 @@
 ---
 title: "init"
 summary: "Designated incantation for your designated initializers"
-completion-scope: Function or Method
+completion-scope: CodeBlock
 ---
 
 self = [super init];

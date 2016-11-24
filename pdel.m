@@ -2,7 +2,7 @@
 title: "UIPickerViewDelegate"
 summary: "Placeholders for required UIPickerView Delegate methods"
 platform: iOS
-completion-scope: Class Implementation
+completion-scope: ClassImplementation
 ---
 
 #pragma mark - UIPickerViewDelegate

@@ -7,5 +7,5 @@ completion-scope: Function or Method
 <# view #>.frame = ({
     CGRect frame = <# view #>.frame;
     <# ... #>
-    frame;
+    CGRectIntegral(frame);
 });
